@@ -146,7 +146,7 @@ if ( typeof define === 'function' && define.amd ) {
   defineBridget( window.jQuery );
 }
 
-})( window );
+})( window );   // window closed
 
 /*!
  * eventie v1.0.6
