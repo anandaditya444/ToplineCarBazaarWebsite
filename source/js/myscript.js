@@ -8,6 +8,7 @@ $(function() {
         $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
       }
     });
+	
     $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
   });
@@ -43,12 +44,15 @@ $(function() {
 $('#btnRM').click(function(){
     $('#readmore').animate({height:'322px'}, 500);
 });
+
 $('#btnRL').click(function(){
 	$('#readmore').animate({height:'0px'}, 500);
 });
+
 $('#btnRM2').click(function(){
     $('#readmore2').animate({height:'322px'}, 500);
 });
+
 $('#btnRL2').click(function(){
 	$('#readmore2').animate({height:'0px'}, 500);
 });
@@ -66,6 +70,7 @@ $(function () {
     $("#dropdownMenu2").html($(this).html() + ' <span class="downicon"></span>');
   });
 });
+
 $(function () {
   $("#mydd3 a").on('click',function (e) {
   	e.preventDefault();
